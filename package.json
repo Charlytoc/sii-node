@@ -1,0 +1,25 @@
+{
+  "name": "sii",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/utils/verifyEnv.js && npx ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "inquirer": "^12.5.0",
+    "openai": "^4.89.0",
+    "playwright": "^1.51.1",
+    "readline-sync": "^1.4.10"
+  }
+}

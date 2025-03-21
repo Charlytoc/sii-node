@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+    // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    // "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
+    // "tsBuildInfoFile": "./.tsbuildinfo",              /* Specify the path to .tsbuildinfo incremental compilation file. */
+    // "disableSourceOfProjectReferenceRedirect": true,  /* Disable preferring source files instead of declaration files when referencing composite projects. */
+    // "disableSolutionSearching": true,                 /* Opt a project out of multi-project reference checking when editing. */
+    // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
+
+    /* Language and Environment */
+    "target": "ESNext",                                 /* Usa la versión más moderna de JavaScript para generar el código. */
+    "lib": ["ESNext", "DOM"],                                  /* Incluye las últimas APIs disponibles en ECMAScript. */
+
+    /* Modules */
+    "module": "NodeNext",                               /* Usa la resolución de módulos moderna de Node.js. */
+    "moduleResolution": "NodeNext",                     /* Configura la resolución de módulos como Node.js. */
+    "rootDir": "./src",                                 /* Carpeta donde están los archivos fuente TypeScript. */
+    "outDir": "./dist",                                 /* Carpeta donde se generarán los archivos compilados. */
+    "resolveJsonModule": true,                          /* Permite importar archivos JSON. */
+    "esModuleInterop": true,                            /* Facilita la interoperabilidad entre CommonJS y ES Modules. */
+    "allowSyntheticDefaultImports": true,               /* Permite importar módulos sin un `export default`. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                    /* Permite incluir archivos JavaScript en el proyecto. */
+
+    /* Emit */
+    "sourceMap": true,                                  /* Genera archivos .map para depuración en el navegador o Node.js. */
+    "removeComments": true,                             /* Elimina los comentarios en el código generado. */
+
+    /* Type Checking */
+    "strict": true,                                     /* Habilita todas las verificaciones estrictas de TypeScript. */
+    "noImplicitAny": true,                              /* Prohíbe variables sin tipo explícito (`any`). */
+    "strictNullChecks": true,                           /* No permite asignar `null` o `undefined` a variables sin declarar. */
+    "strictFunctionTypes": true,                        /* Verifica que los tipos de funciones sean compatibles. */
+    "noUnusedLocals": true,                             /* Muestra errores por variables no utilizadas. */
+    "noUnusedParameters": true,                         /* Muestra errores por parámetros de función no utilizados. */
+    "noImplicitReturns": true,                          /* Asegura que todas las funciones devuelvan un valor explícito. */
+    "noFallthroughCasesInSwitch": true,                 /* Previene errores en `switch` sin `break`. */
+
+    /* Completeness */
+    "skipLibCheck": true,                               /* Omite la verificación de archivos de definición `.d.ts` para acelerar la compilación. */
+    "forceConsistentCasingInFileNames": true            /* Asegura que los nombres de archivos respeten mayúsculas/minúsculas en los imports. */
+  }
+}
