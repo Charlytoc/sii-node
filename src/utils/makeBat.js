@@ -6,11 +6,11 @@ const workingDir = process.cwd();
 const desktopPath = path.join(os.homedir(), 'Desktop');
 const batFilePath = path.join(desktopPath, 'run_sii.bat');
 
+// Ruta típica de instalación de Git Bash en Windows
+const gitBashPath = `"C:\\Program Files\\Git\\bin\\bash.exe"`;
+
 const batContent = `@echo off
-cd /d "${workingDir}"
-echo Working Directory: ${workingDir}
-npm run start
-pause
+${gitBashPath} -c "cd '${workingDir}' && npm run start"
 `;
 
 fs.writeFile(batFilePath, batContent, (err) => {
